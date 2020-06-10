@@ -1,0 +1,6 @@
+server.port=8020
+spring.application.name=users_us
+eureka.client.serviceUrl.deaultzone:http://localhost:8010/eureka
+spring.devtools.remote.restart.enabled=true
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false

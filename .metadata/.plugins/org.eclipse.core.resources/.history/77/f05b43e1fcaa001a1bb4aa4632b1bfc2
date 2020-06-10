@@ -1,0 +1,11 @@
+package com.example.userService.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class userController {
+
+public String staus() {
+	return "success";
+}
+}

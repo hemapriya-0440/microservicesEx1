@@ -1,0 +1,13 @@
+package com.example.zuuApiGateway;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ZuuApiGatewayApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ZuuApiGatewayApplication.class, args);
+	}
+
+}
