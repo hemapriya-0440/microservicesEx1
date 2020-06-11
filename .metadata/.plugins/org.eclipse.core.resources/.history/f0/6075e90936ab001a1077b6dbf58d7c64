@@ -1,0 +1,7 @@
+package com.example.user.repo;
+
+import org.springframework.data.repository.CrudRepository;
+
+public class userRepo implements CrudRepository<T, ID> {
+
+}

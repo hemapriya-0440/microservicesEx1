@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\CM Lokeshwara Reddy\Documents\Hema\.git">
+			<item value="false"/>
+			<item value="CM Lokeshwara Reddy &lt;hemapriya0440@gmail.com&gt;"/>
+			<item value="&quot;addedd h2&quot;"/>
+			<item value="CM Lokeshwara Reddy &lt;hemapriya0440@gmail.com&gt;"/>
+			<item value="6ee96508e9159ea0d94ffbf4696de0f54e557b33"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
+	</section>
+</section>
