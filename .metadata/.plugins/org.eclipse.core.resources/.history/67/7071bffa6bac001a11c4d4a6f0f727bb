@@ -1,0 +1,11 @@
+package com.example.user.repo;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.example.user.ui.data.userEntity;
+
+public interface userRepo extends CrudRepository<Long, userEntity> {
+
+	void save(userEntity usrentity);
+
+}

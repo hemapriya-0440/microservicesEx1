@@ -11,10 +11,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "users")
 public class userEntity implements Serializable {
-	public void setEncryptpwd(String encryptpwd) {
-		this.encryptpwd = encryptpwd;
-	}
-
 	private static final long serialVersionUID = 3097331402466429644L;
 	@Id
 	@GeneratedValue
@@ -64,5 +60,8 @@ public class userEntity implements Serializable {
 
 	public String getEncryptpwd() {
 		return encryptpwd;
+	}
+	public void setEncryptpwd(String encryptpwd) {
+		this.encryptpwd = encryptpwd;
 	}
 }

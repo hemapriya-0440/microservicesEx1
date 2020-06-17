@@ -1,0 +1,33 @@
+package com.example.user.ui.service;
+
+import java.util.UUID;
+
+import javax.transaction.Transactional;
+
+import org.modelmapper.ModelMapper;
+import org.modelmapper.convention.MatchingStrategies;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.user.repo.userRepo;
+import com.example.user.ui.data.userEntity;
+import com.example.user.ui.dto.userdto;
+@Service
+@Transactional
+public class userserviceImpl implements userservice {
+	@Autowired
+private userRepo repo;
+
+	
+	public userdto createuser(userdto userdetaiils) {
+		userdetaiils.setUserId(UUID.randomUUID().toString());
+		
+		ModelMapper mapper=new ModelMapper();
+		mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+		userEntity usrentity=mapper.map(userdetaiils, userEntity.class);
+		usrentity.setEncryptpwd("test");
+		repo.save(usrentity);
+		return null;
+	}
+
+}

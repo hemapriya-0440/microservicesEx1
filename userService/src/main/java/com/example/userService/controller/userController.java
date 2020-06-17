@@ -22,20 +22,20 @@ public class userController {
 	@Autowired
 	private Environment env;
 	@Autowired
-	userservice service;
-	
+	private userservice service;
 
 	@GetMapping("status/check")
 	public String staus() {
-		return "running on the port" +env.getProperty("local.server.port");
+		return "running on the port" + env.getProperty("local.server.port");
 	}
+
 	@PostMapping
 	public String createuser(@Valid @RequestBody userRequestModel userdetails) {
-		ModelMapper mapper=new ModelMapper();
+		ModelMapper mapper = new ModelMapper();
 		mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
-		userdto dto =mapper.map(userdetails, userdto.class);
+		userdto dto = mapper.map(userdetails, userdto.class);
 
-		userdto createuser = service.createuser(dto);
+		service.createuser(dto);
 
 		return "user created";
 	}
