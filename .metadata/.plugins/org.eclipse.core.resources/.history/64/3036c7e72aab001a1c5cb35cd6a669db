@@ -1,5 +1,0 @@
-package com.example.user.ui.model;
-
-public class userRequestModel {
-private String first
-}

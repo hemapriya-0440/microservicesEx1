@@ -1,5 +1,0 @@
-package com.example.user.ui.service;
-
-public class userserviceImpl implements userservice {
-
-}

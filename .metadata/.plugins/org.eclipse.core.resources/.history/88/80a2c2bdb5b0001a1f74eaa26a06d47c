@@ -1,0 +1,11 @@
+package com.example.user.ui.service;
+
+import javax.validation.Valid;
+
+import com.example.user.ui.data.userEntity;
+import com.example.user.ui.dto.userdto;
+
+public interface userservice {
+userdto createuser (userdto userdetaiils);
+ userdto getuser ( userEntity userdetails);
+}
